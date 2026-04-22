@@ -36,7 +36,8 @@ function submit() {
 }
 
 async function setup() {
-    createCanvas(400, 400);
+    cnv = createCanvas(400, 400);
+    cnv.parent('main');
     background(255, 255, 255, 0);
     imageMode(CENTER);
     image(img, width / 2, height / 2, 400, 400);
@@ -45,6 +46,7 @@ async function setup() {
     //create instruction text
     instruction = createP('enter your handle to begin');
     instruction.id('instruction');
+    instruction.parent('main');
     instruction.position(10, 170);
     nameField = createInput();
     nameField.id('name');
@@ -58,6 +60,7 @@ async function setup() {
     //create inputStuff section
     inputStuff = createDiv();
     inputStuff.id('inputStuff');
+    inputStuff.parent('main');
     inputStuff.position(10, 250);
     //create frequency input and button
     freqInput = createInput();
@@ -77,11 +80,12 @@ async function setup() {
     freqState = createP('idle...');
     freqState.class('freqState');
     freqState.style('width', '400px');
-    freqState.position(10, 130);
+    freqState.position(10, 120);
 
     //create name stuff section
     nameStuff = createDiv();
     nameStuff.id('nameStuff');
+    nameStuff.parent('main');
     nameStuff.position(10, 210);
     nameStuff.child(nameField);
     nameStuff.child(submitButton);
@@ -92,14 +96,17 @@ async function setup() {
     inputStuff.child(sendButton);
     //create title
     title = createElement('h1', 'frequency links');
+    title.parent('main');
     title.position(10, -10);
     title.class('title');
     //create subtitle
     subtitle = createElement('p', 'a multi-person audio work');
+    subtitle.parent('main');
     subtitle.position(10, 25);
     subtitle.class('subtitle');
     //attribution
     attribution = createElement('p', 'by Tommy (2023)');
+    attribution.parent('main');
     attribution.position(10, 35);
     attribution.class('attribution');
     //create a p5 sound oscillator
