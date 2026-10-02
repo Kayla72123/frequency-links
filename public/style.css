@@ -5,6 +5,13 @@ body {
     font-family: sans-serif;
     font-size: 13px;
     font-weight: 100;
+
+    background-image: url(monroe.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
     }
 
 .controls {
@@ -59,4 +66,44 @@ button {
   width:400px;
   height:400px;
   margin:25px auto 0;
+}
+
+#leftEye{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  display: flex;
+
+  left: -25px;
+  top: 330px;
+}
+
+#leftEye img{
+  /* width: 50% */
+}
+
+#rightEye{
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  display: flex;
+
+  left: 140px;
+  top: 300px;
+}
+
+#rightEye img{
+  /* width: 50% */
+}
+
+#rotationSlider {
+    position: absolute;
+    top: 45px;
+    left: -170px;
+}
+
+#scaleSlider {
+    position: absolute;
+    top: 5px;
+    left: -170px;
 }

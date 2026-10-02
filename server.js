@@ -23,16 +23,17 @@ io.on('connection', (socket) => {
   console.log(socket.id);
   
   //receives the frequency emitter from Client
-  socket.on("frequency", (arg) => {
+  socket.on("rotation", (arg) => {
     console.log(arg); 
-    io.emit('freqResponse', arg);
+    io.emit('rotationResponse', arg);
   });
 
-  //receives the name emitter from Client
-  socket.on("name", (arg) => {
-    //console.log(arg);
-    io.emit('response', arg);
+  socket.on("scale", (arg) => {
+    console.log(arg); 
+    io.emit('scaleResponse', arg);
   });
+
+ 
 
   socket.on('disconnect', () => console.log('Client disconnected'));
 });
