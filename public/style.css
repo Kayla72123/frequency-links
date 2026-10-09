@@ -1,3 +1,10 @@
+#main {
+    width: 763px;
+    height: 738px;
+    position: relative;
+    margin: auto;
+}
+
 body {
     margin:0;
     padding:0;
