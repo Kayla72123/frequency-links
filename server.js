@@ -33,6 +33,11 @@ io.on('connection', (socket) => {
     io.emit('scaleResponse', arg);
   });
 
+  socket.on("skew", (arg) => {
+    console.log(arg); 
+    io.emit('skewResponse', arg);
+  });
+
  
 
   socket.on('disconnect', () => console.log('Client disconnected'));

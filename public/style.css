@@ -78,10 +78,6 @@ button {
   top: 330px;
 }
 
-#leftEye img{
-  /* width: 50% */
-}
-
 #rightEye{
   position: absolute;
   width: 165px;
@@ -92,18 +88,39 @@ button {
   top: 300px;
 }
 
-#rightEye img{
-  /* width: 50% */
-}
+#smile{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
 
-#rotationSlider {
-    position: absolute;
-    top: 45px;
-    left: -170px;
+  left: 38px;
+  top: 510px;
 }
 
 #scaleSlider {
-    position: absolute;
-    top: 5px;
-    left: -170px;
+  position: absolute;
+  top: 5px;
+  left: -170px;
+
+  accent-color: rgb(0, 124, 120);
 }
+
+#rotationSlider {
+  position: absolute;
+  top: 45px;
+  left: -170px;
+
+  accent-color: rgb(0, 72, 181);
+  
+}
+
+#skewSlider {
+  position: absolute;
+  top: 85px;
+  left: -170px;
+
+  accent-color: rgb(245, 47, 126);
+
+}
+
