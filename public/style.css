@@ -1,30 +1,30 @@
 #main {
-    width: 763px;
-    height: 738px;
-    position: relative;
-    margin: auto;
+  position: relative;
+  width: 763px;
+  height: 738px;
+  margin: auto;
+
+  background-image: url(monroe.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+    
 }
 
 body {
-    margin:0;
-    padding:0;
-    min-height:100vh;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: 100;
-
-    background-image: url(monroe.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-
-    }
+  margin:0;
+  padding:0;
+  min-height:100vh;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+}
 
 .controls {
-    margin:auto;
-    width:80%;  
-    text-align:center;  
+  margin:auto;
+  width:80%;  
+  text-align:center;  
 }
 
 button {
@@ -65,34 +65,26 @@ button {
   font-family: sans-serif;
 }
 
-#main {
-  position:relative;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:400px;
-  height:400px;
-  margin:25px auto 0;
-}
+
 
 #leftEye{
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 68px;
+  height: 68px;
   display: flex;
 
-  left: -25px;
-  top: 330px;
+  left: 168px;
+  top: 350px;
 }
 
 #rightEye{
   position: absolute;
-  width: 165px;
-  height: 165px;
+  width: 160px;
+  height: 160px;
   display: flex;
 
-  left: 140px;
-  top: 300px;
+  left: 320px;
+  top: 315px;
 }
 
 #smile{
@@ -101,14 +93,14 @@ button {
   height: 100px;
   display: flex;
 
-  left: 38px;
-  top: 510px;
+  left: 224px;
+  top: 520px;
 }
 
 #scaleSlider {
   position: absolute;
   top: 5px;
-  left: -170px;
+  left: 30px;
 
   accent-color: rgb(0, 124, 120);
 }
@@ -116,7 +108,7 @@ button {
 #rotationSlider {
   position: absolute;
   top: 45px;
-  left: -170px;
+  left: 30px;
 
   accent-color: rgb(0, 72, 181);
   
@@ -125,7 +117,7 @@ button {
 #skewSlider {
   position: absolute;
   top: 85px;
-  left: -170px;
+  left: 30px;
 
   accent-color: rgb(245, 47, 126);
 
