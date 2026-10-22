@@ -242,7 +242,17 @@ body {
 
 #errorText{
   display: none;
-  color: white;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  margin: 0;
+  color: black;
   font-family: monospace;
-  font-size: 25px;
+  font-size: 13px;
+}
+
+#finalScreen.errorPage {
+  background: rgb(240, 240, 240);
+  justify-content: flex-start;
+  align-items: flex-start;
 }

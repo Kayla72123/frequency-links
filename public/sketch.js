@@ -132,26 +132,26 @@ restartBtn.addEventListener("click", function() {
 
                     setTimeout(function(){
                         finalWords.style.opacity = "1";
-                    }, 600);
+                    }, 650);
 
                     setTimeout(function() {
                         finalWords.style.opacity = "0";
-                    }, 650);
+                    }, 700);
 
                     setTimeout(function(){
                         finalWords.style.opacity = "1";
-                    }, 900);
+                    }, 800);
 
 
                     setTimeout(function(){
                         document.querySelector("#finalWords").style.display = "none";
 
                         setTimeout(function(){
-                            window.location.href = "/user-not-found";
-                            //document.querySelector("#errorText").style.display = "block";
-                        }, 2000)
-                    }, 4000)
-                }, 6500);
+                            document.querySelector("#finalScreen").classList.add("errorPage");
+                            document.querySelector("#errorText").style.display = "block";
+                        }, 1500)
+                    }, 3000)
+                }, 5000);
 
             }, 5000);
 
