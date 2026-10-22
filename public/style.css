@@ -221,7 +221,7 @@ body {
 }
 
 #finalWords {
-  color: white;
+  color: rgb(173, 173, 173);
   font-size: 30px;
   letter-spacing: 8px;
   text-align: center;
