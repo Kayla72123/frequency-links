@@ -14,6 +14,8 @@ crying.volume = 0;
 let whisper = document.querySelector("#whisper");
 whisper.volume = 0;
 
+
+
 ///sliders
 slider1.addEventListener("input", function(e) {
     console.log(this.value);
@@ -65,7 +67,97 @@ restartBtn.addEventListener("click", function() {
     crying.pause();
     whisper.pause();
 
-setTimeout(function() {
+    document.querySelector("#blackBackground").style.display = "block";
+    document.body.style.backgroundColor = "black";
+
+    setTimeout(function() {
         blackScreen.style.opacity = "0";
+
+        // setTimeout(function() {
+        //     document.querySelector("#ghost").style.opacity = "0.5";
+        //     document.querySelector("#ghost").style.transform = "translateX(50px)";
+        // }, 4000);
+
+        setTimeout(function() {
+            let ghost = document.querySelector("#ghost");
+            
+            setInterval(function() {
+                let x = Math.random() * 40 - 20; 
+                let y = Math.random() * 40 - 20;
+                
+                ghost.style.transform = `translate(${x}px, ${y}px)`;
+                ghost.style.opacity = Math.random() * 0.4;
+
+            }, 150);
+
+            setTimeout(function(){
+                    document.querySelector("#glitchText").style.display = "block";
+                }, 2000);
+
+            // setTimeout(function(){
+
+            //     setInterval(function(){
+            //         if (Math.random() > 0.5){
+            //             realMonroe.style.opacity = "1";
+            // } else{
+            //     realMonroe.style.opacity = "0";
+            // }
+            //     }, 150);
+            // }, 5000);
+
+            setTimeout(function() {
+                realMonroe.style.opacity = "0";
+                setTimeout(function() {
+                    realMonroe.style.opacity = "1";
+                }, 200);
+                
+                setTimeout(function() {
+                    setInterval(function() {
+                        if (Math.random() > 0.5) {
+                            realMonroe.style.opacity = "1";
+                        } else {
+                            realMonroe.style.opacity = "0";
+                        }
+                    }, 120);
+                }, 1800);
+                
+                setTimeout(function() {
+                    document.querySelector("#finalScreen").style.display = "flex";
+
+                    let finalWords = document.querySelector("#finalWords");
+
+                    setTimeout(function() {
+                        finalWords.style.opacity = "0";
+                    }, 500);
+
+                    setTimeout(function(){
+                        finalWords.style.opacity = "1";
+                    }, 600);
+
+                    setTimeout(function() {
+                        finalWords.style.opacity = "0";
+                    }, 650);
+
+                    setTimeout(function(){
+                        finalWords.style.opacity = "1";
+                    }, 900);
+
+
+                    setTimeout(function(){
+                        document.querySelector("#finalWords").style.display = "none";
+
+                        setTimeout(function(){
+                            window.location.href = "/user-not-found";
+                            //document.querySelector("#errorText").style.display = "block";
+                        }, 2000)
+                    }, 4000)
+                }, 6500);
+
+            }, 5000);
+
+        }, 4000);
+
     }, 10000);
+
 });
+

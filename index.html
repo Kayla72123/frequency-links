@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="/socket.io/socket.io.js"></script>
-    <title>spinny thing</title>
+
+    <script src="library_folder/dist/library.min.js"></script>
+    
+    <title>Moving Marylin</title>
   </head>
   <body>
     <div id="main">
@@ -30,16 +33,30 @@
       </div>
 
       <button id="restartBtn">Restart</button>
+
+ 
+
     </div>
 
-   
+    <div id="blackBackground"></div>
+
     <div id="realMonroe">
       <img src="realMonroe2.jpeg">
+      <img id="ghost" src="realMonroe2.jpeg">
+
+      <p id="glitchText">Wait! I'm not finished!!</p>
     </div>
 
     <div id="blackScreen">
       <p>You didn't even hesitate.</p>
       <p>Changing me seemed like second nature to you.</p>
+    </div>
+
+    <div id="finalScreen">
+      <p id="finalWords">I̷ j̸u̷s̶t̷ w̸a̶n̷t̸e̶d̷ t̸o̶ b̷e̸ m̶y̷s̸e̶l̷f̸.</p>
+
+      <p id="errorText">404: USER NOT FOUND</p>
+      
     </div>
 
 
