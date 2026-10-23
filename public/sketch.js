@@ -160,6 +160,11 @@ restartBtn.addEventListener("click", function() {
 
                             document.querySelector("#finalScreen").classList.add("errorPage");
                             document.querySelector("#errorText").style.display = "block";
+
+                            setTimeout(function() { 
+                                window.location.reload();
+                            }, 20000);
+
                         }, 1500)
                     }, 3200)
                 }, 5000);
