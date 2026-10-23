@@ -14,6 +14,11 @@ crying.volume = 0;
 let whisper = document.querySelector("#whisper");
 whisper.volume = 0;
 
+let smallGlitch = document.querySelector("#smallGlitch");
+smallGlitch.volume = 0.15;
+
+let crazyGlitch = document.querySelector("#crazyGlitch");
+crazyGlitch.volume = 0.19;
 
 
 ///sliders
@@ -81,6 +86,8 @@ restartBtn.addEventListener("click", function() {
         setTimeout(function() {
             let ghost = document.querySelector("#ghost");
             
+            smallGlitch.play();
+
             setInterval(function() {
                 let x = Math.random() * 40 - 20; 
                 let y = Math.random() * 40 - 20;
@@ -112,6 +119,8 @@ restartBtn.addEventListener("click", function() {
                 }, 200);
                 
                 setTimeout(function() {
+                    smallGlitch.pause();
+                    crazyGlitch.play();
                     setInterval(function() {
                         if (Math.random() > 0.5) {
                             realMonroe.style.opacity = "1";
@@ -147,15 +156,17 @@ restartBtn.addEventListener("click", function() {
                         document.querySelector("#finalWords").style.display = "none";
 
                         setTimeout(function(){
+                            crazyGlitch.pause();
+
                             document.querySelector("#finalScreen").classList.add("errorPage");
                             document.querySelector("#errorText").style.display = "block";
                         }, 1500)
-                    }, 3000)
+                    }, 3200)
                 }, 5000);
 
             }, 5000);
 
-        }, 4000);
+        }, 4800);
 
     }, 10000);
 

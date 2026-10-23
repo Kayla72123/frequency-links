@@ -111,6 +111,7 @@ body {
 
 #restartBtn{
   position: absolute;
+  font-size: 14px;
   top:115px;
   left:27px;  
   border-radius: 4px;
@@ -130,6 +131,7 @@ body {
   align-items: center;
 
   text-align: center;
+  font-family: Courier, "Courier New", monospace;
   color: white;
   flex-direction: column;
   opacity: 1;
@@ -191,6 +193,7 @@ body {
   z-index: 2;
   bottom: 10%;
   color: white;
+  font-family: Courier, "Courier New", monospace;
   font-size: 30px;
   text-align: center;
 }
