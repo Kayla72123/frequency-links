@@ -18,7 +18,7 @@ let smallGlitch = document.querySelector("#smallGlitch");
 smallGlitch.volume = 0.15;
 
 let crazyGlitch = document.querySelector("#crazyGlitch");
-crazyGlitch.volume = 0.19;
+crazyGlitch.volume = 0.16;
 
 
 ///sliders
